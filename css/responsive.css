@@ -1,0 +1,467 @@
+/* ukuran tab */
+@media screen and (max-width: 1115px) {
+    /* index */
+    nav ul{
+        width: 50%;
+    }
+    .utama{
+        font-size: 25px;
+    }
+    .ap-img img,
+    .ra-img img{
+        width: 170px;
+        height: 170px;
+    }
+
+    /* article */
+    article figure{
+        width: 600px;
+    }
+    article figcaption{
+        font-size: 15px;
+    }
+
+    /* footer */
+    footer{
+        font-size: 15px;
+    }
+    .footer-kiri,
+    .footer-kanan{
+        width: 250px;
+    }
+
+    /* member */
+    .text{
+        font-size: 20px;
+    }
+}
+
+
+/* ukuran tablet*/
+@media screen and (max-width: 885px) {
+    /* index */
+    .utama{
+        font-size: 20px;
+    }
+    .ap-img img,
+    .ra-img img{
+        width: 140px;
+        height: 140px;
+    }
+    .judul-artist,
+    .judul-album{
+        font-size: 25px;
+    }
+    .judul-artist a,
+    .judul-album a{
+        font-size: 15px;
+    }
+    figcaption{
+        font-size: 15px;
+    }
+
+    /* article */
+    aside img{
+        width: 130px;
+    }
+    article figure{
+        width: 470px;
+    }
+    article img{
+        width: 170px;
+    }
+    article figcaption{
+        font-size: 12px;
+    }
+    .content-kiri{
+        width: 450px;
+    }
+
+    /* footer */
+    .footer-kiri,
+    .footer-center,
+    .footer-kanan{
+        width: 190px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    /* member */
+    .text{
+        width: 500px;
+        font-size: 16px;
+    }
+}
+
+/* ukuran hp */
+@media screen and (max-width: 576px) {
+    /* header dibuat jadi header aside */
+    .menu-toggle,
+    .close-toggle{
+        display: flex;
+        cursor: pointer;
+    }
+    .close-toggle{
+        display: none;
+    }
+    .bx-x{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.425);
+        border-radius: 50%;
+    }
+    nav ul{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 60%;
+      height: 100vh;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      background-color: beige;  
+      z-index: -1;
+      transform: translateX(100%);      
+      transition: all 1s;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
+    .head-kiri{
+        font-size: 22px;
+    }
+
+    /* isi konten pada index */
+    .utama{
+        font-size: 12px;
+    }
+    .ap-img img,
+    .ra-img img{
+        width: 100px;
+        height: 100px;
+    }
+    .judul-artist,
+    .judul-album{
+        font-size: 15px;
+    }
+    .judul-artist a,
+    .judul-album a,
+    figcaption{
+        font-size: 11px;
+    }
+
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .footer-kiri,
+    .footer-center,
+    .footer-kanan{
+        text-align: center;
+        width: 270px;
+    }
+    .gambar{
+        margin-left: 50px;
+    }
+
+
+    /* saran */
+    .bx{
+        font-size: 23px;
+    }
+    header input{
+        margin: 15px;
+    }
+    .ap-img img,
+    .ra-img img{
+        width: 80px;
+        height: 80px;
+    }
+    .ap-img figure,
+    .ra-img figure{        
+        width: 80px;
+    }
+    figcaption{
+        font-size: 10px;
+    }
+
+    /* article */
+    aside img{
+        width: 70px;
+    }
+    article figure{
+        width: 300px;
+    }
+    figure img{
+        width: 90px;
+    }
+    article figcaption{
+        font-size: 7px;
+    }
+    article > h1{
+        font-size: 16px;
+    }
+    article figure{
+        width: 260px;
+    }
+
+    /* member */
+    .text{
+        font-size: 9px;
+    }
+    .opsi{
+        font-size: 13px;
+        padding: 10px 50px;
+    }
+    #sign-in span a{
+        font-size: 12px;
+    }
+    #sign-in,
+    #sign-up{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    /* about us */
+    .main{
+        font-size: 10px;
+    }
+    .content-kiri{
+        width: 300px;
+    }
+    figure .img-content1{
+        width: 130px;
+        height: 210px;
+    }
+    figure .content1{
+        width: 200px;
+        margin-top: 0;
+    }
+    figure{
+        width: 100%;
+    }
+    .container2 ul,
+    h3{
+        width: 400px;
+    }
+    h3 a{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:391px) {
+    /* selector untuk hover text pada icon nav  */
+    .hover-text{
+        font-size: 17px;
+    }
+
+    /* footer */
+    footer .footer-kiri h1{
+        font-size: 20px;
+    }
+
+    /* article */
+    article figure{
+        width: 250px;
+    }
+    article figcaption h1,
+    article figcaption span{
+        font-size: 8px;
+        font-weight: 500;
+    }
+    article figure img{
+        width: 80px;
+    }
+    aside img{
+        width: 50px;
+    }
+
+    /* about */
+    .content-kiri{
+        width: 250px;
+    }
+    .container1>h1,
+    .content-kiri>h2,
+    .content-kiri .bx-music,
+    .main .container2 .bxl-deezer{
+        font-size: 14px;
+    }
+    .main figure img{
+        width: 100px;
+        height: 150px;
+    }
+    .container2 ul,
+    .main h3{
+        width: 270px;
+    }
+
+    /* member */
+    .text h1{
+        width: 280px;
+    }
+    #sign-in span a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    /* icon nav */
+    .hover-text{
+        font-size: 15px;
+    }
+    .head-kiri,
+    .head-kiri .bxl-deezer{
+        font-size: 17px;
+    }
+
+    /* konten pada index */
+    .utama{
+        font-size: 10px;
+    }
+    .judul-artist,
+    .judul-album{
+        font-size: 12px;
+    }
+    .judul-artist a,
+    .judul-album a{
+        font-size: 7px;
+    }
+
+    /* footer */
+    .footer-kiri,
+    .footer-kanan{
+        font-size: 10px;
+    }
+    .footer-kiri h1{
+        font-size: 15px;
+    }
+    .gambar img{
+        margin-left: 20px;
+        width: 20px;
+    }
+
+    /* form pada header */
+    header input{
+        padding: 5px;
+    }
+
+    /* article */
+    aside img{
+        width: 50px;
+    }
+    article figure{
+        width: 200px;
+    }
+    article img{
+        width: 80px;
+    }
+    article figcaption h1,
+    article figcaption span{
+        font-size: 8px;
+    }
+
+    /* member */
+    .text,
+    .opsi{
+        font-size: 7.3px;
+    }
+    .span label,
+    p{
+        font-size: 10px;
+        align-items: center;
+    }
+    #sign-in span a{
+        font-size: 10px;
+    }
+
+    /* about */
+    h1{
+        font-size: 13px;
+    }
+    .content-kiri{
+        width: 195px;
+    }
+    .content-kiri p{
+        font-size: 7.6px;
+        font-weight: normal;
+    }
+    h2, .bx-music{
+        font-size: 10px;
+    }
+    figure .img-content1{
+        width: 70px;
+        height: 100px;
+    }
+    figure p,
+    h3{
+        font-size: 9px;
+        font-weight: normal;
+    }
+    figure{
+        gap:20px;
+    }
+    .container2 ul,
+    h3{
+        width: 240px;
+    }
+    .bxl-deezer{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    /* member */
+    #sign-in span a{
+        font-size: 8px;
+    }
+
+    /* article */
+    aside img{
+        width: 30px;
+    }
+    article figure{
+        width: 190px
+    }
+    article figure img{
+        width: 70px;
+    }
+    article figure figcaption h1,
+    article figure figcaption span{
+        font-size: 8px;
+    }
+
+    /* footer */
+    footer .footer-kiri h1{
+        font-size: 12px;
+    }
+    footer .footer-kiri p{
+        font-size: 9px;
+    }
+
+    /* about */
+    .main .container1 .content-kiri h2{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:163px) {
+    /* header pada index */
+    header{
+        height: 25vh;
+    }
+    header .head-kiri,
+    header .head-kiri .bxl-deezer{
+        font-size: 13px;
+    }
+    header .menu-toggle .bx-menu,
+    header nav ul .bx{
+        font-size: 15px;
+    } 
+
+}

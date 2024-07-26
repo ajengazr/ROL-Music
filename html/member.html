@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROL Music</title>
+    <!-- css yang digunakan -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h2 class="head-kiri"><i class='bx bxl-deezer'></i> ROL Music</h2>
+        <nav>
+            <div class="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="close-toggle">
+                <i class='bx bx-x'></i>
+            </div>
+            <ul>
+                <li class="icon-container">
+                    <a href="index.html">
+                        <i class='bx bxs-home'></i>
+                        <span class="hover-text">Home</span>
+                    </a>
+                </li>
+                <li class="icon-container">
+                    <a href="article.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="hover-text">Article</span>
+                    </a>
+                </li>
+                <li class="icon-container">
+                    <a href="member.html">
+                        <i class='bx bxs-user'></i>
+                        <span class="hover-text">Membership</span>
+                    </a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+    <!-- pembungkus isi konten -->
+    <main>
+        <!-- video yang akan terus berulang karena menggunakan atribut khusus -->
+        <video autoplay loop>
+            <source src="../assets/bg.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <!-- kontent dalam container ini yg akan berada di atas video di atas -->
+        <div class="text">
+            <h1>ROL Music | Rhythm Of Life Music</h1>
+            <h2>Get albums inspired by the artist you are listening. Register now!</h2> <br>
+            <!-- tag a yg diberi href dgn id sesuai nama id pada container yg ketika button dlm tag a ini diklik, baru container dgn nama id sesuaai id pada href tsb akan muncul -->
+            <a href="#sign-in" class="sign-ina"><button class="opsi">Sign in</button></a> <br>
+            <a href="#sign-up" class="sign-upa"><button class="opsi">Sign Up</button></a>
+        </div>
+        <!-- container dgn id sign-in, yang belum tampil jika button sign in blm diklik -->
+        <section id="sign-in">
+            <form action="./index.html">
+                <h1>Log In</h1>
+                <p>don't have an account? <a href="#sign-up">Sign Up</a></p>
+                <input type="email" name="email" placeholder="email" required>
+                <input type="password" name="password" placeholder="password" required>
+                <span>
+                    <span class="span">
+                        <input type="checkbox"><label for="">Remember me</label> 
+                    </span>
+                    <a href="#">forget password?</a>
+                </span>
+                <button>Sign In</button>
+            </form>
+        </section>
+        <!-- container dgn id sign-up, yang belum tampil jika button sign up blm diklik -->
+        <section id="sign-up">
+            <form action="./member.html" method="get">
+                <h1>Sign Up</h1>
+                <p>you have an account? <a href="#sign-up">Sign In</a></p>
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+                <input type="email" name="email" id="email" placeholder="email" required>
+                <input type="password" name="password" id="password" placeholder="password" required>
+                <button>Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <!-- javascript -->
+    <script src="../js/member.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>
